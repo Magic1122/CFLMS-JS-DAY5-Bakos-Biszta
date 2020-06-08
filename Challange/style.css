@@ -75,11 +75,11 @@ li {
     display: none;
     z-index: 200;
     top: 15%;
-    left: 35%;
+    left: 30%;
     padding: 1rem;
     width: 40vw;
     height: 36vw;
-    background-color: rgb(192, 17, 17);
+    background-color: rgba(207, 74, 74, 0.9);
     cursor: pointer;
 }
 
@@ -139,7 +139,7 @@ li {
 }
 
 .car-img:hover {
-    border: 4px solid rgb(192, 17, 17);
+    /* border: 4px solid rgb(192, 17, 17); */
     cursor: pointer;
 }
 
