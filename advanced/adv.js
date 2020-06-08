@@ -36,24 +36,31 @@ var object1 = [{
 ]
 
 object1.map((item) => {
+    /* Saving the reference of our result div in the var resultDiv */
     const resultDiv = document.getElementById('result')
+    /* Creating HTML Element */
     const container = document.createElement('div')
     const picture = document.createElement('img')
     const titleP = document.createElement('p')
     const authorP = document.createElement('p')
 
+    /* Setting the source attribute of the img element */
     picture.setAttribute('src', item.image)
 
+    /* Adding a Class to our container div, regarding the true or false value of our read property */
     const readOrNot = item.read === 'true' ? 'read' : 'not-read'
     container.setAttribute('class', readOrNot)
 
+    /* Setting the value of our paragraphs */
     titleP.innerText = item.title
     authorP.innerText = item.author
 
+    /* Appending the Elements to our Container DIV */
     container.appendChild(titleP)
     container.appendChild(authorP)
     container.appendChild(picture)
 
+    /* Appending our Container DIV to our Results DIV */
     resultDiv.appendChild(container)
 
 
