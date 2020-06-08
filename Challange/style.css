@@ -1,59 +1,162 @@
 html {
-  height: 100%;
+    height: 100%;
 }
 
 body {
-  height: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: 1vw;
+}
+
+header {
+    display: flex;
+    flex-flow: row;
+    width: 100%;
+    background-color: black;
+}
+
+.column {
+    width: 25vw;
+    flex-flow: column;
+    align-items: flex-end;
+    padding: 0 6vw;
+    font-size: 2vw;
+    color: white;
+}
+
+.column>img {
+    width: 10vw;
+    align-items: center;
+    justify-content: center;
+}
+
+.column2 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+}
+
+.column2>img {
+    width: 50%;
+    height: 40%;
+    padding: 0 3vw;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    background-color: rgb(192, 17, 17);
+    margin: 0;
+}
+
+li {
+    padding: 1vw 5vw;
+    font-size: 1.8vw;
+    color: white;
+    text-decoration: none;
 }
 
 .backdrop {
-  position: fixed;
-  display: none;
-  top: 0;
-  left: 0;
-  z-index: 100;
-  width: 100vw;
-  height: 100vh;
-  background: rgba(0, 0, 0, 0.5);
-  cursor: pointer;
+    position: fixed;
+    display: none;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
 }
 
 .modal {
-  position: fixed;
-  display: none;
-  z-index: 200;
-  top: 15%;
-  left: 35%;
-  padding: 1rem;
-  width: 50%;
-  height: 20rem;
-  background-color: white;
-  cursor: pointer;
+    position: fixed;
+    display: none;
+    z-index: 200;
+    top: 15%;
+    left: 35%;
+    padding: 1rem;
+    width: 40vw;
+    height: 35vw;
+    background-color: rgb(192, 17, 17);
+    cursor: pointer;
 }
 
 .modal-image {
-  width: 100%;
-  object-fit: cover;
-  cursor: pointer;
+    width: 100%;
+    object-fit: cover;
+    cursor: pointer;
 }
 
 .open {
-  display: block !important;
+    display: block !important;
+    text-align: center;
+}
+
+.open>#model {
+    font-size: 2.5vw;
+    color: white;
+}
+
+.open>p {
+    font-size: 1.5vw;
+    color: white;
+}
+
+#modal-image {
+    width: 100%;
 }
 
 #result {
-  column-count: 3;
-  padding: 1rem;
-  column-gap: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem;
+}
+
+.car {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    background-color: gray;
+    margin: 1vw 1vw;
+    width: 31%;
+}
+
+.car>p {
+    color: white;
+    font-size: 2vw;
 }
 
 .car-img {
-  border-radius: 2px;
-  width: 60%;
-  object-fit: cover;
+    border-radius: 2px;
+    width: 80%;
+    object-fit: cover;
+    margin: 1vw auto;
+    text-align: center;
 }
 
 .car-img:hover {
-  border: 4px solid blue;
-  cursor: pointer;
+    border: 4px solid rgb(192, 17, 17);
+    cursor: pointer;
+}
+
+p {
+    text-align: center;
+}
+
+footer {
+    background-color: black;
+    width: 100%;
+    height: 6vw;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    color: white;
+    font-size: 2vw;
+    text-align: center;
+    padding: 2vw;
 }
