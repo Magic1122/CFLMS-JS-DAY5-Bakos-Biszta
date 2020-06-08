@@ -1,0 +1,59 @@
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+}
+
+.backdrop {
+  position: fixed;
+  display: none;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+.modal {
+  position: fixed;
+  display: none;
+  z-index: 200;
+  top: 15%;
+  left: 35%;
+  padding: 1rem;
+  width: 50%;
+  height: 20rem;
+  background-color: white;
+  cursor: pointer;
+}
+
+.modal-image {
+  width: 100%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.open {
+  display: block !important;
+}
+
+#result {
+  column-count: 3;
+  padding: 1rem;
+  column-gap: 5px;
+}
+
+.car-img {
+  border-radius: 2px;
+  width: 60%;
+  object-fit: cover;
+}
+
+.car-img:hover {
+  border: 4px solid blue;
+  cursor: pointer;
+}
