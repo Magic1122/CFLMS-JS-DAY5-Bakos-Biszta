@@ -4,38 +4,38 @@ const CARS = [{
     model: 'Audi A3',
     year: 2015,
     price: 25000,
-    img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR9LhhJMplFhD_9bgSM9wlV6_2pjWxaite4LJ_OnNkcfOYS7mLk&usqp=CAU'
+    img: 'img/audi.png'
 }, {
     model: 'Audi A3',
     year: 2015,
     price: 25000,
-    img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR9LhhJMplFhD_9bgSM9wlV6_2pjWxaite4LJ_OnNkcfOYS7mLk&usqp=CAU'
+    img: 'img/audi.png'
 }, {
     model: 'Audi A3',
     year: 2015,
     price: 25000,
-    img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR9LhhJMplFhD_9bgSM9wlV6_2pjWxaite4LJ_OnNkcfOYS7mLk&usqp=CAU'
+    img: 'img/audi.png'
 }, {
     model: 'Audi A3',
     year: 2015,
     price: 25000,
-    img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR9LhhJMplFhD_9bgSM9wlV6_2pjWxaite4LJ_OnNkcfOYS7mLk&usqp=CAU'
+    img: 'img/audi.png'
 }, {
     model: 'Audi A3',
     year: 2015,
     price: 25000,
-    img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR9LhhJMplFhD_9bgSM9wlV6_2pjWxaite4LJ_OnNkcfOYS7mLk&usqp=CAU'
+    img: 'img/audi.png'
 }, {
     model: 'Audi A3',
     year: 2015,
     price: 25000,
-    img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR9LhhJMplFhD_9bgSM9wlV6_2pjWxaite4LJ_OnNkcfOYS7mLk&usqp=CAU'
+    img: 'img/audi.png'
 }]
 
 CARS.map((car) => {
     /* Saving the reference of our result div in the var resultDiv */
     const resultDiv = document.getElementById('result')
-    /* Creating HTML Element */
+        /* Creating HTML Element */
     const container = document.createElement('div')
     const picture = document.createElement('img')
     const model = document.createElement('p')
