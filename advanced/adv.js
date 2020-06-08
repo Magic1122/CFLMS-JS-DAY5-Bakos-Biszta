@@ -34,6 +34,27 @@ var object1 = [{
         'image': 'https://images-na.ssl-images-amazon.com/images/I/51s0U-29SZL._SX322_BO1,204,203,200_.jpg'
     }
 ]
-for (i = 0, i < object1.length, i++) {
-    document.getElementById('result').innerHTML += "<div>Title"
-}
+
+object1.map((item) => {
+    const resultDiv = document.getElementById('result')
+    const container = document.createElement('div')
+    const picture = document.createElement('img')
+    const titleP = document.createElement('p')
+    const authorP = document.createElement('p')
+
+    picture.setAttribute('src', item.image)
+
+    const readOrNot = item.read === 'true' ? 'read' : 'not-read'
+    container.setAttribute('class', readOrNot)
+
+    titleP.innerText = item.title
+    authorP.innerText = item.author
+
+    container.appendChild(titleP)
+    container.appendChild(authorP)
+    container.appendChild(picture)
+
+    resultDiv.appendChild(container)
+
+
+})
